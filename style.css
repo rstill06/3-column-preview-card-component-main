@@ -19,8 +19,8 @@ h1 {
 }
 
 .row {
+  display: inline-block;
   padding: 20px 10px;
-  border-radius: 10px 50px;
   color: hsla(0, 0%, 100%, 0.75);
 }
 
@@ -52,11 +52,24 @@ h1 {
   outline: none;
 }
 .btn:focus,
-.btn:hover {
-  background: black;
+.btnSedans:hover {
+  background: hsl(31, 77%, 52%);
   color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
 }
 
+.btn:focus,
+.btnSuvs:hover {
+  background: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+.btn:focus,
+.btnLuxury:hover {
+  background: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
 .btnSedans {
   color: hsl(31, 77%, 52%);
 }
@@ -67,4 +80,23 @@ h1 {
 
 .btnLuxury {
   color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (min-width: 1320px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .col {
+    width: 25%;
+
+    padding: 100px;
+  }
+  .sedans {
+    border-radius: 10px 0 0 10px;
+  }
+  .luxury {
+    border-radius: 0 10px 10px 0;
+  }
 }
