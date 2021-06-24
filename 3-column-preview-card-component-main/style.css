@@ -1,0 +1,70 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px 20px;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background: hsl(0, 0%, 95%);
+  line-height: 1.6em;
+}
+h1 {
+  text-transform: uppercase;
+  padding: 5px;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+}
+
+.row {
+  padding: 20px 10px;
+  border-radius: 10px 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.col {
+  padding: 40px 40px 20px;
+}
+
+.sedans {
+  background: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
+}
+
+.suvs {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+.btn {
+  margin: 20px;
+  padding: 10px 30px;
+  border-radius: 100px;
+  background: hsl(0, 0%, 95%);
+  font-size: 15px;
+  border: none;
+  transition-duration: 0.4s;
+  outline: none;
+}
+.btn:focus,
+.btn:hover {
+  background: black;
+  color: hsl(0, 0%, 95%);
+}
+
+.btnSedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.btnSuvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.btnLuxury {
+  color: hsl(179, 100%, 13%);
+}
